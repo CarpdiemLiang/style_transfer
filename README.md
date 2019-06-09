@@ -12,5 +12,5 @@ Neural_Style_Transfer.ipynb      -- Run neural style transfer method<br/>
 Usage:
 =========================================================================================
 Change the network structure by choosing content_layers_default and style_layers_default 
-and commenting oghers. For white noise input, considering decreasing the weight of style
+and commenting oghers. For white noise input, consider decreasing the weight of style
 loss and increase the number of optimizing steps. 
