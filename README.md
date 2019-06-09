@@ -6,7 +6,7 @@ Install package 'matplotlib' as: $ pip install --user matplotlib
 
 Structure:
 =========================================================================================
-Neural_Style_Transfer.ipynb      -- Run neural style transfer method
+Neural_Style_Transfer.ipynb      -- Run neural style transfer method<br/>
 /images                          -- Store the style image and content image for this part
 
 Usage:
