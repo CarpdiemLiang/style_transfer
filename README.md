@@ -1,7 +1,7 @@
 # Neural Style Transfer: 
 Requirements: 
 =========================================================================================
-Install package 'pillow' as: $ pip install --user pillow
+Install package 'pillow' as: $ pip install --user pillow <br/>
 Install package 'matplotlib' as: $ pip install --user matplotlib
 
 Structure:
