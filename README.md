@@ -1,9 +1,11 @@
 # Directory Introduction
+==============
 Our project contains three different models, one is in "cycle_gan_unet" directory which uses the u-net like cnn as generators, one is in "Ukiyoe_codes" directory which uses Resnet blocks as generators, the other is in ...
 
 # Cycle-Gan-Unet
+===========
   Requirements:
-=========================================================================================
+---------------------
 Download the check-points for the model from the google drive link, and put them into the corresponding directorys.
 
 
