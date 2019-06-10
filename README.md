@@ -59,7 +59,13 @@ latest_ukiyoe_G_A.pkl: the saved generator that can translate images into ukiyoe
 
 test_image.jpg: test image used in single_test.ipynb<br/>
 
+### Usage:
+single_test.ipynb(for demo use):   run this notebook to show the Ukiyoe-style transfer result of 'test_image.jpg'. Make sure the image, latest_ukiyoe_G_A.pkl and './models' are in their original places<br/>
 
+train.ipynb:  run this notebook to train a cycle-GAN that can transfer 'datasets/trainA' style to 'datasets/trainB' style. Training options can be found and revised in './options/train_options.py' and './options/base_options.py'<br/>
+
+test.ipynb:  run this notebook to test the model in './checkpoints' file. Input the model name in './options/base_options.py'<br/>
+plot_losses.ipynb:   run this to plot losses given a loss log in './checkpoints'<br/>
 
 
 
