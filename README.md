@@ -24,7 +24,7 @@ Download the check-points for the model from the google drive link, and put them
  Requirements: 
 =========================================================================================
 Install package 'pillow' as: $ pip install --user pillow <br/>
-Install package 'matplotlib' as: $ pip install --user matplotlib
+Install package 'matplotlib' as: $ pip install --user matplotlib <br/>
 Install package 'pytorch' as: $ pip install --user torch torchvision 
 
  Structure:
