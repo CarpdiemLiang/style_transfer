@@ -67,8 +67,8 @@ Install package 'pillow' as: $ pip install --user pillow <br/>
 Install package 'matplotlib' as: $ pip install --user matplotlib
 
 ### Structure:
-Neural_Style_Transfer.ipynb      -- Run neural style transfer method<br/>
-/images                          -- Store the style image and content image for this part
+Neural_Style_Transfer.ipynb      -- This notebook stores neural style transfer method as well as the demo of the model<br/>
+/images                          -- Store the style image and content image for this part, make sure they are in the right path
 
 ### Usage:
 Change the network structure by choosing content_layers_default and style_layers_default 
