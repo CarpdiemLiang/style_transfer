@@ -21,7 +21,7 @@ inference.py                         -- This .py file is used to run the pretrai
 .pkl                                 -- All the pickle files are used to store the images<br/>
 
 ### Usage:
-Directly run the demo.ipynb notebook. You can see the original image and the transferred image.
+Directly run the demo.ipynb notebook. You can see the original image and the transferred image.<br/>
 If you want to train the model by yourself, delete /baroque and /ukiyo_e directorys. And run the cycle_gan_model.ipynb notebook. You can set all the parameters in the initialization of the experiment class.
 
 ## Cycle-Gan-Resnet 
