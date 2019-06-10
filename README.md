@@ -26,18 +26,15 @@ If you want to train the model by yourself, delete /baroque and /ukiyo_e directo
 
 
 ## Neural Style Transfer: 
- Requirements: 
-=========================================================================================
+### Requirements: 
 Install package 'pillow' as: $ pip install --user pillow <br/>
 Install package 'matplotlib' as: $ pip install --user matplotlib
 
- Structure:
-=========================================================================================
+### Structure:
 Neural_Style_Transfer.ipynb      -- Run neural style transfer method<br/>
 /images                          -- Store the style image and content image for this part
 
- Usage:
-=========================================================================================
+## Usage:
 Change the network structure by choosing content_layers_default and style_layers_default 
 and commenting oghers. For white noise input, consider decreasing the weight of style
 loss and increase the number of optimizing steps. 
