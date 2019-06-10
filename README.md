@@ -10,7 +10,7 @@ Download the check-points for the model from the google drive link, and put them
 /salience_model/model.ckpt-200.data-00000-of-00001: https://drive.google.com/open?id=1u8gW2Oj8lZ_Cxqg561lQR9ioDaK64LwX
 
  Structure:
-=========================
+============================================================================================================
 /baroque                         -- Store the checkpoints for baroque style translation
 /ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation
 /meta_grapsh                         -- Store the information of the salient objective detection model
@@ -23,7 +23,7 @@ inference.py                         -- This .py file is used to run the pretrai
 .pkl                                 -- All the pickle files are used to store the images
 
  Usage:
-===============
+=======================================================================================
 Directly run the demo.ipynb notebook. You can see the original image and the transferred image.
 If you want to train the model by yourself, delete /baroque and /ukiyo_e directorys. And run the cycle_gan_model.ipynb notebook. You can set all the parameters in the initialization of the experiment class.
 
