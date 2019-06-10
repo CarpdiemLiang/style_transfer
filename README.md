@@ -11,16 +11,16 @@ Download the check-points for the model from the google drive link, and put them
 /salience_model/model.ckpt-200.data-00000-of-00001: https://drive.google.com/open?id=1u8gW2Oj8lZ_Cxqg561lQR9ioDaK64LwX<br/>
 
 ### Structure:
-/baroque                         -- Store the checkpoints for baroque style translation<br/>
-/ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation<br/>
-/meta_grapsh                         -- Store the information of the salient objective detection model<br/>
-/salience_model                      -- Store the checkpoints for salient objective detection model<br/>
-demo.ipynb                           -- This notebook is used for demo, you can choose the image youo want by changing the index of "val_set"<br/>
-cycle_gan_unet                       -- This notebook is the main function of the model<br/>
-nntools.py                           -- This .py file abstract the status manager and realize the training process of the model<br/>
-util.py                              -- This .py file is used to realize the image pool called by nntools.py<br/>
-inference.py                         -- This .py file is used to run the pretrained salient objective detection model<br/>
-.pkl                                 -- All the pickle files are used to store the images<br/>
+./cycle_gan_unet/baroque                         -- Store the checkpoints for baroque style translation<br/>
+./cycle_gan_unet/ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation<br/>
+./cycle_gan_unet/meta_grapsh                         -- Store the information of the salient objective detection model<br/>
+./cycle_gan_unet/salience_model                      -- Store the checkpoints for salient objective detection model<br/>
+./cycle_gan_unetdemo.ipynb                           -- This notebook is used for demo, you can choose the image youo want by changing the index of "val_set"<br/>
+./cycle_gan_unetcycle_gan_unet                       -- This notebook is the main function of the model<br/>
+./cycle_gan_unetnntools.py                           -- This .py file abstract the status manager and realize the training process of the model<br/>
+./cycle_gan_unetutil.py                              -- This .py file is used to realize the image pool called by nntools.py<br/>
+./cycle_gan_unetinference.py                         -- This .py file is used to run the pretrained salient objective detection model<br/>
+./cycle_gan_unet.pkl                                 -- All the pickle files are used to store the images<br/>
 
 ### Usage:
 Directly run the demo.ipynb notebook. You can see the original image and the transferred image.<br/>
@@ -40,24 +40,24 @@ train.ipynb:  run this notebook to train a cycle-GAN that can transfer 'datasets
 test.ipynb:  run this notebook to test the model in './checkpoints' file. Input the model name in './options/base_options.py'<br/>
 plot_losses.ipynb:   run this to plot losses given a loss log in './checkpoints'<br/>
 
-./options/base_options.py:   stores basic training and testing options.<br/>
-./options/train_options.py:   stores other training options<br/>
-./options/test_options.py:   stores other testing options<br/>
+.Ukiyoe_codes/options/base_options.py:   stores basic training and testing options.<br/>
+.Ukiyoe_codes/options/train_options.py:   stores other training options<br/>
+.Ukiyoe_codes/options/test_options.py:   stores other testing options<br/>
 
-./models/base_model.py:   base class of all the models<br/>
-./models/cycle_gan_model.py:   implement cycle-GAN model<br/>
-./models/networks.py:   define basic network behavior methods<br/>
-./models/test_model.py:   define some testing settings and run the testing from test.ipynb<br/>
+.Ukiyoe_codes/models/base_model.py:   base class of all the models<br/>
+.Ukiyoe_codes/models/cycle_gan_model.py:   implement cycle-GAN model<br/>
+.Ukiyoe_codes/models/networks.py:   define basic network behavior methods<br/>
+.Ukiyoe_codes/models/test_model.py:   define some testing settings and run the testing from test.ipynb<br/>
 
-./util/:   include python files that handle data loading and processing, webpage display and image buffer.<br/>
+.Ukiyoe_codes/util/:   include python files that handle data loading and processing, webpage display and image buffer.<br/>
 
-./datasets/:   a folder that stores training and testing data in trainA, trainB, testA and testB subfolders.<br/>
+.Ukiyoe_codes/datasets/:   a folder that stores training and testing data in trainA, trainB, testA and testB subfolders.<br/>
 
-./checkpoints/:   a folder storing saved models, loss logs and training options<br/>
+.Ukiyoe_codes/checkpoints/:   a folder storing saved models, loss logs and training options<br/>
 
-latest_ukiyoe_G_A.pkl: the saved generator that can translate images into ukiyoe-style, used in single_test.ipynb<br/>
+.Ukiyoe_codes/latest_ukiyoe_G_A.pkl: the saved generator that can translate images into ukiyoe-style, used in single_test.ipynb<br/>
 
-test_image.jpg: test image used in single_test.ipynb<br/>
+.Ukiyoe_codes/test_image.jpg: test image used in single_test.ipynb<br/>
 
 ### Usage:
 single_test.ipynb(for demo use):   run this notebook to show the Ukiyoe-style transfer result of 'test_image.jpg'. Make sure the image, latest_ukiyoe_G_A.pkl and './models' are in their original places<br/>
@@ -75,8 +75,8 @@ Install package 'pillow' as: $ pip install --user pillow <br/>
 Install package 'matplotlib' as: $ pip install --user matplotlib
 
 ### Structure:
-Neural_Style_Transfer.ipynb      -- This notebook stores neural style transfer method as well as the demo of the model<br/>
-/images                          -- Store the style image and content image for this part, make sure they are in the right path
+./Neural_Style_Transfer/Neural_Style_Transfer.ipynb      -- This notebook stores neural style transfer method as well as the demo of the model<br/>
+./Neural_Style_Transfer/images                          -- Store the style image and content image for this part, make sure they are in the right path
 
 ### Usage:
 Run the Neural_Style_Transfer.ipynb for demo.<br/>
