@@ -24,6 +24,42 @@ inference.py                         -- This .py file is used to run the pretrai
 Directly run the demo.ipynb notebook. You can see the original image and the transferred image.
 If you want to train the model by yourself, delete /baroque and /ukiyo_e directorys. And run the cycle_gan_model.ipynb notebook. You can set all the parameters in the initialization of the experiment class.
 
+## Cycle-Gan-Resnet 
+This is the README for photo-to-ukiyoe cycle-GAN style transfer task. Over half of the codes are adopted from 'https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix' and then modified. The rest are written by student. 
+
+### Requirements:
+Install visdom and dominate if willing to display training progress on a webpage by:
+    pip install -visdom
+    pip install -dominate
+
+### Structure:
+single_test.ipynb:   run this notebook to show the Ukiyoe-style transfer result of 'test_image.jpg'. Make sure the image, latest_ukiyoe_G_A.pkl and './models' are in their original places<br/>
+train.ipynb:  run this notebook to train a cycle-GAN that can transfer 'datasets/trainA' style to 'datasets/trainB' style. Training options can be found and revised in './options/train_options.py' and './options/base_options.py'<br/>
+test.ipynb:  run this notebook to test the model in './checkpoints' file. Input the model name in './options/base_options.py'<br/>
+plot_losses.ipynb:   run this to plot losses given a loss log in './checkpoints'<br/>
+
+./options/base_options.py:   stores basic training and testing options.<br/>
+./options/train_options.py:   stores other training options<br/>
+./options/test_options.py:   stores other testing options<br/>
+
+./models/base_model.py:   base class of all the models<br/>
+./models/cycle_gan_model.py:   implement cycle-GAN model<br/>
+./models/networks.py:   define basic network behavior methods<br/>
+./models/test_model.py:   define some testing settings and run the testing from test.ipynb<br/>
+
+./util/:   include python files that handle data loading and processing, webpage display and image buffer.<br/>
+
+./datasets/:   a folder that stores training and testing data in trainA, trainB, testA and testB subfolders.<br/>
+
+./checkpoints/:   a folder storing saved models, loss logs and training options<br/>
+
+latest_ukiyoe_G_A.pkl: the saved generator that can translate images into ukiyoe-style, used in single_test.ipynb<br/>
+
+test_image.jpg: test image used in single_test.ipynb<br/>
+
+
+
+
 
 ## Neural Style Transfer: 
 ### Requirements: 
