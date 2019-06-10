@@ -15,12 +15,12 @@ Download the check-points for the model from the google drive link, and put them
 ./cycle_gan_unet/ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation<br/>
 ./cycle_gan_unet/meta_grapsh                         -- Store the information of the salient objective detection model<br/>
 ./cycle_gan_unet/salience_model                      -- Store the checkpoints for salient objective detection model<br/>
+./cycle_gan_unet/images\*.pkl                        -- All the pickle files are used to store the images according to different styles and landscape<br/>
 ./cycle_gan_unet/demo.ipynb                           -- This notebook is used for demo, you can choose the image youo want by changing the index of "val_set"<br/>
 ./cycle_gan_unet/cycle_gan_unet.ipynb                       -- This notebook is the main function of the model<br/>
 ./cycle_gan_unet/nntools.py                           -- This .py file abstract the status manager and realize the training process of the model<br/>
 ./cycle_gan_unet/util.py                              -- This .py file is used to realize the image pool called by nntools.py<br/>
 ./cycle_gan_unet/inference.py                         -- This .py file is used to run the pretrained salient objective detection model<br/>
-./cycle_gan_unet/\*.pkl                                 -- All the pickle files are used to store the images<br/>
 
 ### Usage:
 Directly run the demo.ipynb notebook. You can see the original image and the transferred image.<br/>
