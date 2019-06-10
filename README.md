@@ -4,23 +4,23 @@ Our project contains three different models, one is in "cycle_gan_unet" director
 ## Cycle-Gan-Unet
  Requirements:
 =================
-Download the check-points for the model from the google drive link, and put them into the corresponding directorys.
-/baroque/checkpoint.pth.tar: https://drive.google.com/open?id=1oMTewhni1L7ZW0F9nNgNoE2RfkrGZ500
-/ukiyo_e/checkpoint.pth.tar: https://drive.google.com/open?id=1mEQliUwOKgSLSUuB_vBXwl03HH_p4VJO
-/salience_model/model.ckpt-200.data-00000-of-00001: https://drive.google.com/open?id=1u8gW2Oj8lZ_Cxqg561lQR9ioDaK64LwX
+Download the check-points for the model from the google drive link, and put them into the corresponding directorys.<br/>
+/baroque/checkpoint.pth.tar: https://drive.google.com/open?id=1oMTewhni1L7ZW0F9nNgNoE2RfkrGZ500<br/>
+/ukiyo_e/checkpoint.pth.tar: https://drive.google.com/open?id=1mEQliUwOKgSLSUuB_vBXwl03HH_p4VJO<br/>
+/salience_model/model.ckpt-200.data-00000-of-00001: https://drive.google.com/open?id=1u8gW2Oj8lZ_Cxqg561lQR9ioDaK64LwX<br/>
 
  Structure:
 ============================================================================================================
-/baroque                         -- Store the checkpoints for baroque style translation
-/ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation
-/meta_grapsh                         -- Store the information of the salient objective detection model
-/salience_model                      -- Store the checkpoints for salient objective detection model
-demo.ipynb                           -- This notebook is used for demo
-cycle_gan_unet                       -- This notebook is the main function of the model
-nntools.py                           -- This .py file abstract the status manager and realize the training process of the model
-util.py                              -- This .py file is used to realize the image pool called by nntools.py
-inference.py                         -- This .py file is used to run the pretrained salient objective detection model
-.pkl                                 -- All the pickle files are used to store the images
+/baroque                         -- Store the checkpoints for baroque style translation<br/>
+/ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation<br/>
+/meta_grapsh                         -- Store the information of the salient objective detection model<br/>
+/salience_model                      -- Store the checkpoints for salient objective detection model<br/>
+demo.ipynb                           -- This notebook is used for demo<br/>
+cycle_gan_unet                       -- This notebook is the main function of the model<br/>
+nntools.py                           -- This .py file abstract the status manager and realize the training process of the model<br/>
+util.py                              -- This .py file is used to realize the image pool called by nntools.py<br/>
+inference.py                         -- This .py file is used to run the pretrained salient objective detection model<br/>
+.pkl                                 -- All the pickle files are used to store the images<br/>
 
  Usage:
 =======================================================================================
