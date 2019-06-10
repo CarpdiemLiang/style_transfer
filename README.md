@@ -2,6 +2,8 @@
 This is a project about image style transfer developed by Tao Liang, Tianrui Yu, Ke Han and Yifan Ruan. Our project contains three different models, one is in "cycle_gan_unet" directory which uses the u-net like cnn as generators, one is in "Ukiyoe_codes" directory which uses Resnet blocks as generators, which uses the model proposed in this paper https://arxiv.org/pdf/1703.10593.pdf, the other is in neural_style_transfer that implement sytle transfer using convolution neural network proposed in this paper https://arxiv.org/pdf/1508.06576.pdf.
 
 ## Cycle-Gan-Unet
+### Description:
+This model consists of 2 generators and 2 discriminators. The two generators as U-net like CNNs. During the evaluation of the model, I directly used the pretrained salient objective detection model from Joker, https://github.com/Joker316701882/Salient-Object-Detection.
 ### Requirements:
 Download the check-points for the model from the google drive link, and put them into the corresponding directorys.<br/>
 /baroque/checkpoint.pth.tar: https://drive.google.com/open?id=1oMTewhni1L7ZW0F9nNgNoE2RfkrGZ500<br/>
