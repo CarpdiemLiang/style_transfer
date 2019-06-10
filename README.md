@@ -13,7 +13,7 @@ Download the check-points for the model from the google drive link, and put them
 /ukiyo_e                             -- Store the checkpoints for ukiyo_e style translation<br/>
 /meta_grapsh                         -- Store the information of the salient objective detection model<br/>
 /salience_model                      -- Store the checkpoints for salient objective detection model<br/>
-demo.ipynb                           -- This notebook is used for demo<br/>
+demo.ipynb                           -- This notebook is used for demo, you can choose the image youo want by changing the index of "val_set"<br/>
 cycle_gan_unet                       -- This notebook is the main function of the model<br/>
 nntools.py                           -- This .py file abstract the status manager and realize the training process of the model<br/>
 util.py                              -- This .py file is used to realize the image pool called by nntools.py<br/>
