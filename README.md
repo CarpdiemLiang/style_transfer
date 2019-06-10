@@ -73,7 +73,7 @@ Neural_Style_Transfer.ipynb      -- This notebook stores neural style transfer m
 /images                          -- Store the style image and content image for this part, make sure they are in the right path
 
 ### Usage:
-Run the Change Neural_Style_Transfer.ipynb for demo.<br/>
+Run the Neural_Style_Transfer.ipynb for demo.<br/>
 The notebook also stores model. If you want to change the network structure, choose one of content_layers_default and style_layers_default each and comment the others. For white noise input, consider decreasing the weight of style loss and increase the number of optimizing steps. 
 
 
